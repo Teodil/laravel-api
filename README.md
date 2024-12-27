@@ -25,6 +25,8 @@ Composer
 ```bash
     docker-compose run artisan db:seed --class=ReviewsSeeder
 ```
+## Тестирование
+В корневой папке есть файл testApi.postman_collection.json его можно импортировать в Postman и выполнить запросы
 
 ### Примечание
 Была проблема с permission denied при попытке laravel открыть кэш страницы.
