@@ -6,24 +6,24 @@
 ```
 Composer
 ```bash
-    docker-compose run composer install
+    docker-compose run --rm composer install
 ```
 Запуск мигрцаии
 ```bash
-    docker-compose run artisan migrate
+    docker-compose run --rm artisan migrate
 ```
 Запуск Seeder
 ```bash
-    docker-compose run artisan db:seed --class=CategoriesSeeder
+    docker-compose run --rm artisan db:seed --class=CategoriesSeeder
 ```
 ```bash
-    docker-compose run artisan db:seed --class=DatabaseSeeder
+    docker-compose run --rm artisan db:seed --class=DatabaseSeeder
 ```
 ```bash
-    docker-compose run artisan db:seed --class=ProductsSeeder
+    docker-compose run --rm artisan db:seed --class=ProductsSeeder
 ```
 ```bash
-    docker-compose run artisan db:seed --class=ReviewsSeeder
+    docker-compose run --rm artisan db:seed --class=ReviewsSeeder
 ```
 ## Тестирование
 В корневой папке есть файл testApi.postman_collection.json его можно импортировать в Postman и выполнить запросы
